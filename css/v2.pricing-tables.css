@@ -1,0 +1,134 @@
+/***
+Pricing table
+***/
+.pricing {
+    position: relative;
+    margin-bottom: 15px;
+    border: 3px solid #EEE4E6;
+    border-radius: 7px;
+}
+
+.pricing-active {
+    border: 2px solid #f33e5c;
+    margin-top: 0px;
+    box-shadow: 7px 7px rgba(20, 20, 20, 0.2);
+}
+
+.pricing-active:hover {
+    margin-top: -1px;
+}
+
+.pricing:hover {
+    border: 3px solid #F22D4E;
+    background: #FDFDFD;
+}
+
+.pricing-head {
+    text-align: center;
+}
+
+.pricing-head h3,
+.pricing-head h4 {
+    margin: 0;
+    line-height: normal;
+}
+
+.pricing-head h3 span {
+    display: block;
+}
+
+.pricing-head h3 span,
+.pricing-head h4 span.frequency {
+    margin-top: 5px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.pricing-head h3 {
+    font-weight: 300;
+    color: white;
+    padding: 12px 0;
+    font-size: 35px;
+    background: #f4516c;
+    border-bottom: solid 1px #f4516c;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.pricing-head h4 {
+    color: #F4516C;
+    padding: 20px 0;
+    font-size: 54px;
+    font-weight: 300;
+    background: rgba(249, 249, 249, 0.9);
+    border-bottom: solid 1px #f5f9e7;
+}
+
+.pricing-head h4 span.price {
+    margin: 10px;
+    padding: 0px 10px 0px 15px;
+    -webkit-clip-path: polygon(10px 0, 100% 5px, 100% 100%, 0 100%);
+    clip-path: polygon(10px 0, 100% 5px, 100% 100%, 0 100%);
+    background-color: #eaeaea;
+}
+
+@media (min-width: 576px) {
+    .pricing-head h4 span.price {
+        padding: 5px 15px 5px 20px;
+    }
+}
+
+.pricing-head h4 i {
+    top: -8px;
+    font-size: 28px;
+    font-style: normal;
+    position: relative;
+}
+
+.pricing-head h4 span.frequency {
+    font-size: 14px;
+    font-style: normal;
+}
+
+/*Pricing Content*/
+.pricing-content li {
+    color: #888;
+    font-size: 14px;
+    padding: 7px 10px;
+    border-bottom: solid 1px #f5f9e7;
+}
+
+.pricing-content li i {
+    top: 2px;
+    color: #575962;
+    font-size: 16px;
+    margin-right: 5px;
+    position: relative;
+}
+
+/*Pricing Footer*/
+.pricing-footer {
+    color: #777;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    padding: 0 20px 19px;
+}
+
+/*Pricing Active*/
+
+.price-active h4 {
+    color: #575962;
+}
+
+.no-space-pricing .pricing:hover {
+    transition: box-shadow 0.2s ease-in-out;
+}
+
+.no-space-pricing .price-active .pricing-head h4,
+.no-space-pricing .pricing:hover .pricing-head h4 {
+    color: #575962;
+    padding: 15px 0;
+    font-size: 80px;
+    transition: color 0.5s ease-in-out;
+}
